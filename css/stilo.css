@@ -3,6 +3,7 @@
 *{
     padding: 0;
     margin: 0;
+    font-family: sans-serif;
 }
 #principal{
     width: 100%;
@@ -31,11 +32,26 @@
         width: 50%;
         height: 20%;
         background-color: tomato;
+        border-radius: 20px 0 0 20px;
+        box-shadow: 0 0 2px #000;
     }
+        #menu ul{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            list-style: none;
+        }
+            #menu ul li{
+                color: white;
+                font-weight: bold;
+                text-shadow: 0 0 2px #000;
+                font-size: 1.1;
+            }
 #corpo{
     width: 100%;
     height: 60%;
-    background-color: black;
     display: flex;
 }
     #corpo section{
@@ -43,18 +59,68 @@
     }
         #formulario{
             width: 30%;
-            background-color: blue;
+            background-color: tomato;
+            border-top-right-radius: 82%;
+            display: flex;
+            align-items: flex-end;
         }
+        form{
+            width: 80%;
+            height: 70%;
+        }
+        #formulario fieldset{
+            width: 100%;
+            height: 30%;
+            border: none;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+            #botoes{
+                flex-direction: row !important;
+                height: 15% !important;
+                align-items: center;
+                justify-content: space-around !important;
+            }
         #texto{
             width: 45%;
-            background-color: blueviolet;
+            color: chocolate;
+            font-size: 0.8em;
+            text-align: justify;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            padding: 0 2%;
         }
+            #texto p{
+                text-indent: 6%;
+            }
+            #texto h1{
+                text-align: center;
+                font-size: 1.4em;
+            }
         #imagem-fachada{
             width: 25%;
-            background-color: brown;
         }
+            #imagem-fachada figure{
+                width: 90%;
+                height: 80%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-around;
+                margin: auto;
+            }
+                #imagem-fachada figure img{
+                    width: 100%;
+                }
+                #imagem-fachada figure figcaption{
+                    font-weight: bold;
+                    color: chocolate;
+                    font-style: italic;
+                }
 #rodape{
     width: 100%;
     height: 10%;
-    background-color: tomato;
+    background: linear-gradient(to right, tomato 70%, white);
 }
